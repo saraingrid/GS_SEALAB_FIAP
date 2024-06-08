@@ -1,0 +1,148 @@
+/* Definindo as fontes personalizadas */
+@font-face {
+  font-family: 'FonteOrelega';
+  src: url('/assets/fonts/Orelega_One/OrelegaOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteSen';
+  src: url('/assets/fonts/Sen/static/Sen-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteSen';
+  src: url('/assets/fonts/Sen/static/Sen-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteSen';
+  src: url('/assets/fonts/Sen/static/Sen-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteSen';
+  src: url('/assets/fonts/Sen/static/Sen-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteSen';
+  src: url('/assets/fonts/Sen/static/Sen-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FonteManrope';
+  src: url('/assets/fonts/Manrope/static/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 2000px;
+  height: 4000px;
+  margin: 0 auto;
+  font-size: 25px; /* Aumenta o tamanho da fonte base */
+}
+
+/* Personalizações para o Menu */
+.mobile-menu {
+@apply fixed inset-0 z-50 bg-white/85 backdrop-blur-sm;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem; 
+height: 100vh;
+}
+
+.close-button {
+@apply font-bold text-xl; /* Aumenta o tamanho da fonte */
+color: red;
+}
+
+header {
+@apply p-6; /* Aumenta o padding do header */
+}
+
+.container {
+@apply flex justify-between h-20 mx-auto; /* Aumenta a altura do container */
+}
+
+ul {
+@apply items-stretch lg:flex;
+}
+
+li {
+@apply text-lg lg:text-2xl; /* Aumenta o tamanho da fonte dos itens da lista */
+}
+
+button {
+@apply px-8 py-3 rounded font-sen text-lg lg:text-2xl; /* Aumenta o tamanho da fonte e padding dos botões */
+}
+
+svg {
+@apply w-8 h-8; /* Aumenta o tamanho do ícone SVG */
+}
